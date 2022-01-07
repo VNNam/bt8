@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js") 
+  body
+    nav 
+      ul 
+        li: a(href="/") Home page 
+        li: a(href="/users/register") Create a user 
+        li: a(href="/users") All users
+    block content

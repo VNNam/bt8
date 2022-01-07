@@ -1,0 +1,7 @@
+extends layout 
+block content 
+  if users.length
+    ul       
+      each val in users 
+        - var id = val._id
+        li: a(href="/users/" + id) #{val.firstName + ' ' + val.lastName}

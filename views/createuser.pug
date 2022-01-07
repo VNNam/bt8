@@ -1,0 +1,19 @@
+extends layout 
+block content   
+  h1 Create User page
+  div#formMessage(class="")
+  form#regForm(action="/users", method="post", class="registerForm") 
+    label(for="firstName") First name
+    input#firstName(type="text", name="firstName", placeholder="your firstname", required)
+    label(for="lastName")  Last name
+    input#lastName(type="text", name="lastName", placeholder="your lastname", required)
+    label(for="username") Username
+    input#username(type="email", name="username", placeholder="your email address")
+    label(for="password") Password  
+    input#password(type="password", name="password", placeholder="password", required)
+    label(for="bithdate") Birthdate
+    input#birthdate(type="date", name="birthdate", placeholder="your birthday", required)
+    div
+      button(type="reset") Clear
+      button(type="submit") Create user
+  script(src="/javascripts/validator.js") 

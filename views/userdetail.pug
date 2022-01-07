@@ -1,0 +1,6 @@
+extends layout 
+block content 
+  each val in data 
+    - var user = val.customer
+    p Full name: #{user.firstName} #{user.lastName}
+    p Email: #{user.username}
